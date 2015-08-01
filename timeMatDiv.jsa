@@ -1,0 +1,1 @@
+jsLoad("Code ", "timeMatDiv", "get_help← {\n '  Time 10 10  ⍝ times ⌹ with the argument'\n}\n\nTime← {\n myBef← «+new Date»\n myRes← ⌹ ?⍵⍴ 1000\n myAft← «+new Date»\n myAft- myBef\n}\n")

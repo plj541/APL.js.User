@@ -1,0 +1,1 @@
+jsLoad("Code ", "timeMix", "get_help← {\n '  Time 10 10  ⍝ times ⊃ with the argument'\n}\n\nTime← {\n myArg← ⍵⍴ (2 3⍴⍳6) 6 (7+3 3⍴⍳9) (16 17) (25+ 2 1⍴⍳2) (⍳2 3) 6 (7+⍳3 3) (16 17) (25+ ⍳2 1) \n myBef← «+new Date»\n myRes← ⊃myArg\n myAft← «+new Date»\n myAft- myBef\n}\n")

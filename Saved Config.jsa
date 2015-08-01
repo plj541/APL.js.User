@@ -1,0 +1,1 @@
+jsLoad("Saved ", "Config", "<Config><Session><css>all-KB.css</css>\n<rows>22</rows>\n<cols>112</cols>\n</Session>\n<Edit><css>all-KB.css</css>\n<rows>24</rows>\n<cols>112</cols>\n</Edit>\n<Fetch>Chars	plj	sudoku	testHtml	testModels	timeMatDiv	timeMix	userOps	xml</Fetch>\n</Config>\n")
