@@ -1,75 +1,80 @@
-0=Produce
+0=Produce 
 1=Fish-Meat
 2=Can Goods
 3=Soup-Condi
 4=Cereal
 5=Jam-Tea
 6=Tide-Pet
-7=Cards
+7=Cards-Baby
 8=Drugs
 9=Snacks
-a=Deli
+a=Deli    
 b=Dairy
 c=Frozen
 ;
+apicThree,Pick Three
 asalad,Deli Salad
 aturkey,Turkey
-abrie,Brie
-ascalPot,Scallop Potatoes
 abreadRoll,Bread Rolls
+ascalPot,Scallop Potatoes
+bmildGuacCups,Guac Cups
+7carrotApple,Carrot Apple
+7brocApple,Broccoli Apple
+0mushroom,Mushrooms
+0spinach,Spinach
 bmilk,Milk
-bOJ,OJ
+boj,OJ
 byogurt,Yogurt
 0apple,Fuji Apples
 0berry,Berries
-0cherr,Cherries
+0cherry,Cherries
 0apricot,Apricots
-0mushrm,Mushrooms
 0tomatoes,Tomatoes
-0greenPep,Green Peppers
-0spinach,Spinach
+0greenPepper,Green Peppers
 0celery,Celery
-bstrngChe,String Cheese
-bcheddarBeef,Cheddar Beef Sticks
-bmildGuacCups,Guac Cups Mild
+abrie,Brie
+bcheeseBeef,Cheese Beef Sticks
 0lemonJuice,Lemon Juice
 0limeJuice,Lime Juice
 1hamburg,Hamburger
 1steak,Steak
-1grndPork,Ground Pork
 1porkChop,Pork Chops
-cbabyLim,Baby Limas
-cokraFroz,Okra
-ccherFroz,Cherries
-1chicBr,Chicken Breast
-1chicThi,Chicken Thigh
-1turkThi,Turkey
-0avacad,Avacado
-0pecans,Pecans
+1groundPork,Ground Pork
+ccherFroz,Frozen Cherries
+1chicBreast,Chicken Breast
+1chicThigh,Chicken Thigh
+1turkThigh,Turkey Thigh
+9belVita,BelVita
+4oatBar,Oats and Honey
+5oldFashPB,Old Fashion PB
+0pecan,Pecans
 0cashew,Cashews
-9ricCra,Rice Cracker
-9beLVit,BelVita
-9sltPepTriscits,Salt & Pepper Triscits
-2mottsFruitVeg,Motts Fruit/Veg (blue)
-2oatCliff,Kids Cliff Bars
-2sqezGo(CarManOrng),Sfy SqezNGo (orange)
-5oldFashPB,Organic Old Fashion
-5preserves,Preserves
-6mitten,Mitten Food
-6catOdor,Cat Deodor
-2tomCan,Diced Tomatoes
-2tomPaste,Tomato Paste
-2appleSauce,Apple Sauce
-2kidneyBeans,Kidney Beans
-2chicBroth,Chicken Broth
-2cranSauce,Cranberry Sauce
-3pickle,Pickles
+5preserve,Preserves
+0banana,Bananas
+0avacado,Avacado
 4oatmeal,Oatmeal
+0russet,Russets
+0onion,Onion
+9riceCracker,Rice Crackers
+2appleSauce,Apple Sauce
+aengMuff,English Muffens
+2tortilla,Tortillas
 0garlic,Garlic
-8vitamin,Vitamins
-4fiberCereal,Fiber Cereal
+8calcium,Calcium
+8zinc,Zinc
+6darkWool,Dark Woolite
+8nasalStrip,Nasal Strips
 8earSwab,Cotton Swabs
 8dentalPick,Dental Picks
-8thPaste,Sensodyne
+8toothPaste,Sensodyne
 8kyJelly,KY Jelly
+cbabyLima,Baby Limas
+cokraFroz,Okra
+6mitten,Mitten Food
+6catOdor,Cat Deodor
+2tomDice,Diced Tomatoes
+2tomPaste,Tomato Paste
+2kidneyBean,Kidney Beans
+2cranSauce,Cranberry Sauce
 8pads,StayFree Maxi
+6dishSoap,Dish Soap
