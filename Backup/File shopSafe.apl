@@ -54,6 +54,7 @@ ccherFroz,Frozen Cherries
 0avacado,Avacado
 4oatmeal,Oatmeal
 0russet,Russets
+0yam,Yams
 0onion,Onion
 9riceCracker,Rice Crackers
 2appleSauce,Apple Sauce
