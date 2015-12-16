@@ -8,6 +8,10 @@ Chars nouns
    sort         dictionary sorting"
 }
 
+lines← {
+ (2 0⍕ (⍵, 1)⍴1+ ⍳⍵), (⍵, 100)⍴ ' 123456789'
+}
+
 null← ∅ ⋄ args← ¯10 ∅ 42 1j1
 ⎕type← {(⍴⍵)⍴ «TypeOf(_w)»}
 

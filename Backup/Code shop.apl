@@ -88,7 +88,7 @@ get_goSave← {
  ((myItems ⎕join TAB), ';', myExtras ⎕join TAB) ⎕file 'shop', thisStore, 'Result'
  myItems← myItems, myExtras
  0= ⍴myItems : ⎕prompt 'Nothing to send!'
- myItems← 1↓¨ myItems[⍋↑¨myItems]
+ myItems← 1↓¨ myItems[⍋myItems]
  myItems← myItems ⎕join ', '
  myAddr← Parm 'Addr'
  0= ⍴myAddr : myItems ⎕prompt 'Addr not specified!  Please copy this to the clipboard:'

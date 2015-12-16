@@ -1,3 +1,4 @@
+!=Fruit-Nuts
 0=Produce 
 1=Fish-Meat
 2=Can Goods
@@ -25,17 +26,21 @@ bmildGuacCups,Guac Cups
 bmilk,Milk
 boj,OJ
 byogurt,Yogurt
-0apple,Fuji Apples
-0berry,Berries
-0cherry,Cherries
-0apricot,Apricots
+!apple,Fuji Apples
+!berryRasp,Raspberry
+!berryBlue,Blueberries
+!grapes,Grapes
+!cherry,Cherries
+!apricot,Apricots
+0lemons,Lemons
+0oranges,Oranges
 0tomatoes,Tomatoes
 0greenPepper,Green Peppers
 0celery,Celery
 abrie,Brie
 bcheeseBeef,Cheese Beef Sticks
-0lemonJuice,Lemon Juice
-0limeJuice,Lime Juice
+0juiceLemon,Lemon Juice
+0juiceLime,Lime Juice
 1hamburg,Hamburger
 1steak,Steak
 1porkChop,Pork Chops
@@ -47,8 +52,8 @@ ccherFroz,Frozen Cherries
 9belVita,BelVita
 4oatBar,Oats and Honey
 5oldFashPB,Old Fashion PB
-0pecan,Pecans
-0cashew,Cashews
+!nutPecan,Pecans
+!nutCashew,Cashews
 5preserve,Preserves
 0banana,Bananas
 0avacado,Avacado
@@ -57,25 +62,26 @@ ccherFroz,Frozen Cherries
 0yam,Yams
 0onion,Onion
 9riceCracker,Rice Crackers
-2appleSauce,Apple Sauce
+3appleSauce,Apple Sauce
 aengMuff,English Muffens
 2tortilla,Tortillas
 0garlic,Garlic
-8calcium,Calcium
-8zinc,Zinc
+8vitCalcium,Calcium
+8vitZinc,Zinc
 6darkWool,Dark Woolite
 8nasalStrip,Nasal Strips
 8earSwab,Cotton Swabs
 8dentalPick,Dental Picks
 8toothPaste,Sensodyne
 8kyJelly,KY Jelly
-cbabyLima,Baby Limas
-cokraFroz,Okra
+cfrozLima,Baby Limas
+cfrozOkra,Okra
+cpizza,Pizza
 6mitten,Mitten Food
 6catOdor,Cat Deodor
 2tomDice,Diced Tomatoes
 2tomPaste,Tomato Paste
 2kidneyBean,Kidney Beans
-2cranSauce,Cranberry Sauce
+3cranSauce,Cranberry Sauce
 8pads,StayFree Maxi
 6dishSoap,Dish Soap
