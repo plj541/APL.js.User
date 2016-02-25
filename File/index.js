@@ -12,7 +12,7 @@
    thisPLJ= thisBFJ= " is set when you choose a destination!"
    thisPLJ= "PLJ" + thisPLJ
    thisBFJ= "BFJ" + thisBFJ
-   thisURL= "file:@Home.html"
+   thisURL= "home.html"
   }
 
   function handleChoice(aLink, aURL, aPLJ, aBFJ) {
