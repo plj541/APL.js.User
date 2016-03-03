@@ -24,17 +24,17 @@
   }
 
   function handleChoice(aLink, aURL, aPLJ, aBFJ) {
-    thisLink.value= aLink
-    thisURL= aURL
-    thisPLJ= aPLJ
-    thisBFJ= aBFJ
+   thisLink.value= aLink
+   thisURL= aURL
+   thisPLJ= aPLJ
+   thisBFJ= aBFJ
 
-    flagEmpty(thisPJ, aPLJ)
-    flagEmpty(thisBJ, aBFJ)
+   flagEmpty(thisPJ, aPLJ)
+   flagEmpty(thisBJ, aBFJ)
 
-    if (thisArgs == "IMMED") {
-     handleLink()
-    }
+   if (thisArgs == "IMMED") {
+    handleLink()
+   }
   }
 
   function flagEmpty(aField, aName) {
@@ -46,7 +46,8 @@
   }
 
   function handleFocus(aValue) {
-    prompt("User Name", aValue)
+   thisLink.focus()
+   prompt("User Name", aValue)
   }
  
   function handleLink() {
