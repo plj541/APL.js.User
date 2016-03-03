@@ -1,9 +1,7 @@
-  var thisPLJ, thisURL, thisBFJ, thisImmed
+  var thisPLJ, thisURL, thisBFJ, thisArgs
   var thisPJ, thisLink, thisBJ
 
   function handleLoad(aLink, aPJ, aBJ) {
-   var myArg
-
    thisPJ= aPJ
    thisLink= aLink
    thisBJ= aBJ
@@ -16,8 +14,13 @@
    thisBFJ= "BFJ" + thisBFJ
    thisURL= "home.html"
 
-   myArg= window.location.href
-   thisImmed= myArg.substr(myArg.length - 6, 6) == "?IMMED"
+   thisArgs= window.location.href
+   thisArgs= thisArgs.split("?")
+   if (thisArgs.length == 2) {
+    thisArgs= thisArgs[1]
+   } else {
+    thisArgs= ""
+   }
   }
 
   function handleChoice(aLink, aURL, aPLJ, aBFJ) {
@@ -29,13 +32,12 @@
     flagEmpty(thisPJ, aPLJ)
     flagEmpty(thisBJ, aBFJ)
 
-
-    if (thisImmed) {
+    if (thisArgs == "IMMED") {
      handleLink()
     }
   }
 
-  function flagEmpty(aField, aName) 
+  function flagEmpty(aField, aName) {
    if (aName.length == 0) {
     aField.style.backgroundColor = "LightPink"
    } else {
