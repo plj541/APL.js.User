@@ -32,7 +32,7 @@
    flagEmpty(thisPJ, aPLJ)
    flagEmpty(thisBJ, aBFJ)
 
-   if (thisArgs == "IMMED") {
+   if (thisArgs != "Immed=No") {
     handleLink()
    }
   }
