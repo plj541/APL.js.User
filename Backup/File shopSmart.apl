@@ -37,8 +37,6 @@ Bmustard,Mustard
 CjackDanl,Jack Daniels
 9cerealB,Cereal Barbara
 9cerealR,Cereal Rob
-4shout,Shout
-4laundrySoap,Laundry Soap
 4bounce,Bounce
 3juiceOrnPinBan,Orange Pinapple Banana
 3juiceLimeade,Limeade
@@ -67,9 +65,10 @@ BcanBeans,Canned Beans
 6bagGal,Gallon Bags
 4bagGarbage,Garbage Bags
 6foil,Al Foil
+6plasticWrap,Plastic Wrap
 4cascade,Cascade
+4shout,Shout
 4windexOrig,Windex Original
 4windexMulti,Windex Multi-Surface
-6plasticWrap,Plastic Wrap
 6gloves,Plastic Gloves
 6dixiCup,Bathroom Cups

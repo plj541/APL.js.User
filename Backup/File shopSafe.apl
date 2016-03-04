@@ -23,9 +23,6 @@ bmildGuacCups,Guac Cups
 7brocApple,Broccoli Apple
 0mushroom,Mushrooms
 0spinach,Spinach
-bmilk,Milk
-boj,OJ
-byogurt,Yogurt
 !apple,Fuji Apples
 !berryRasp,Raspberry
 !berryBlue,Blueberries
@@ -45,7 +42,6 @@ bcheeseBeef,Cheese Beef Sticks
 1steak,Steak
 1porkChop,Pork Chops
 1groundPork,Ground Pork
-ccherFroz,Frozen Cherries
 1chicBreast,Chicken Breast
 1chicThigh,Chicken Thigh
 1turkThigh,Turkey Thigh
@@ -74,6 +70,7 @@ aengMuff,English Muffens
 8dentalPick,Dental Picks
 8toothPaste,Sensodyne
 8kyJelly,KY Jelly
+ccherFroz,Frozen Cherries
 cfrozLima,Baby Limas
 cfrozOkra,Okra
 cpizza,Pizza

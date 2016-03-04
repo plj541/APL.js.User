@@ -1,6 +1,20 @@
 #include Html
 
-thisArguments← thisStore← thisNotInit← thisItems← ''
+thisArguments← thisStore← thisConfig← thisNotInit← thisItems← ''
+
+Define← {
+ btn← 7 Space 'onclick:goClear' Button 'Clear ', thisStore, ' List'
+ cols← 5
+ (key lin)← Shop thisStore
+ tab← cols Columns (⊂'myItems') Check¨ lin
+ tab← tab⍪ cols Columns (⊂'onclick:goExtra') Button¨ key
+ ∆← btn, BR, Table tab
+ ∆← ∆, BR, 'myNext' Text 30
+ ∆← ∆, 25 Space 'mySend' 'onclick:goSend' Button 'Send this List'
+ ∆← ∆, 20 Space 'onclick:goSave' Button 'Save this List'
+ ∆← ∆, BR, 'myExtras' 'readOnly=true' Text 4 42
+ ∆← ∆, 7 Space 'onclick:goRemove' Button 'Remove'
+}
 
 Mail← {
  2≠ ≡⍵ : ↗'DOMAIN ERROR'
@@ -16,16 +30,43 @@ Parm← {
  ↑thisArguments[myArg; 1]
 }
 
+Shop← {
+ lin← ⎕file 'shop', ⍵
+ (key lin)← {(⎕trim ⍵) ⎕split LF}¨ lin ⎕split ';'
+ lin← {⍵ ⎕split ','}¨ lin
+ key lin
+}
+
+get_MailItems← {
+ (myIndex myAddr myItems)← thisItems
+ myItem← myIndex⊃ myItems
+ myLeft← ,⍕(≢myItems)- myIndex← myIndex+ 1
+ myItem Mail myAddr (thisStore, myLeft)
+ (⊂'Mailing ', myLeft, ' Left')Values 'mySend'
+ myIndex< ≢myItems : thisItems[0]← myIndex
+ (⊂'Send ', thisStore, ' List')Values 'mySend'
+ thisItems← ''
+}
+
+get_Next← {
+ myNext← ⎕trim ↑Values 'myNext'
+ 0= ≢myNext : ⎕prompt 'Type in an extra value first!'
+ ∨/', '∊ myNext : ⎕prompt 'No spaces or commas!'
+ MT Values 'myNext'
+ myNext
+}
+
 get_onDefine← {
  thisArguments← Arguments
  thisNotInit← 0= ≢thisStore← Parm 'Store' : ↗'Store is not specified!'
- thisNotInit← 0= ≢⎕file 'shop', thisStore : ↗thisStore, ' is not configured!'
- ∊me
+ thisNotInit← 0= ≢thisConfig← Parm 'Config' : ↗'Config is not specified!'
+ thisNotInit← 0= ≢⎕file thisConfig : ↗thisConfig, ' is empty!'
+ ∊Define ''
 }
 
 get_onLoad← {
  thisNotInit : ''
- 0= ≢∆← ⎕file 'shop', thisStore, 'Result' : ''
+ 0= ≢∆← ⎕file thisConfig, 'Result' : ''
  (myItems myExtras)← ∆ ⎕split ';'
  myItems← myItems ⎕split TAB
  'myItems' Checks⍨ myItems∊⍨ Values 'myItems'
@@ -38,39 +79,12 @@ get_goClear← {
  MT Values 'myExtras'
 }
 
-Shop← {
- lin← ⎕file 'shop', ⍵
- (key lin)← {(⎕trim ⍵) ⎕split LF}¨ lin ⎕split ';'
- lin← {⍵ ⎕split ','}¨ lin
- key lin
-}
-
-get_me← {
- btn← 7 Space 'onclick:goClear' Button 'Clear'
- cols← 5
- (key lin)← Shop thisStore
- tab← cols Columns (⊂'myItems') Check¨ lin
- tab← tab⍪ cols Columns (⊂'onclick:goExtra') Button¨ key
- ∆← btn, BR, Table tab
- ∆← ∆, BR, 'myNext' Text 25
- ∆← ∆, 29 Space 'mySave' 'onclick:goSave' Button 'Send ', thisStore, ' List'
- ∆← ∆, BR, 'myExtras' 'readOnly=true' Text 4 42
- ∆← ∆, 7 Space 'onclick:goRemove' Button 'Remove'
-}
-
 get_goExtra← {
  0= ≢myNext← Next : ''
  myExtras← ↑Values 'myExtras'
  myNext← myNext, (0≠ ⍴myExtras)/', '
  'myExtras' Values⍨ ⊂((↑Field 'value'), myNext), myExtras
-}
-
-get_Next← {
- myNext← ⎕trim ↑Values 'myNext'
- 0= ≢myNext : ⎕prompt 'Type in an extra value first!'
- ∨/', '∊ myNext : ⎕prompt 'No spaces or commas!'
- MT Values 'myNext'
- myNext
+ goSave
 }
 
 get_goRemove← {
@@ -79,33 +93,29 @@ get_goRemove← {
  myExtras← wrap ↑Values 'myExtras'
  myExtras← myExtras ⎕replace (wrap myNext) ''
  'myExtras' Values⍨ ⊂1↓¯1↓ myExtras
+ goSave
 }
 
 get_goSave← {
- 0≠ ≢thisItems : MailItems
  myItems← (Checks 'myItems')/ Values 'myItems'
  myExtras← (⎕trim ↑Values 'myExtras')⎕split ', '
- ((myItems ⎕join TAB), ';', myExtras ⎕join TAB) ⎕file 'shop', thisStore, 'Result'
- myItems← myItems, myExtras
+ myStore← (myItems ⎕join TAB), ';', myExtras ⎕join TAB
+ myStore ⎕file thisConfig, 'Result'
+ myItems, myExtras
+}
+
+get_goSend← {
+ 0≠ ≢thisItems : MailItems
+ myItems← goSave
  0= ⍴myItems : ⎕prompt 'Nothing to send!'
  myItems← 1↓¨ myItems[⍋myItems]
  myItems← myItems ⎕join ', '
  myAddr← Parm 'Addr'
  0= ⍴myAddr : myItems ⎕prompt 'Addr not specified!  Please copy this to the clipboard:'
  1 : myItems Mail myAddr thisStore
- # The following is for SMS Text Messages
+
+ ⍝ NB.  The following was to break up SMS Text Messages
  myItems← myItems {«splitLines(_a.toString(), _w.data[0])»} 156- ⍴thisStore
  1= ⍴myItems : (↑myItems) Mail myAddr thisStore
  thisItems← 0 myAddr myItems ⋄ MailItems
-}
-
-get_MailItems← {
- (myIndex myAddr myItems)← thisItems
- myItem← myIndex⊃ myItems
- myLeft← ,⍕(≢myItems)- myIndex← myIndex+ 1
- myItem Mail myAddr (thisStore, myLeft)
- (⊂'Mailing ', myLeft, ' Left')Values 'mySave'
- myIndex< ≢myItems : thisItems[0]← myIndex
- (⊂'Send ', thisStore, ' List')Values 'mySave'
- thisItems← ''
 }
