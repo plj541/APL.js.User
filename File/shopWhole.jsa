@@ -1,1 +1,1 @@
-jsLoad("File ", "shopWhole", "v=Vitamins \nw=Whole Foods\n;\nvlifeMulti,Life Force\nv-,__________\nv-,__________\nv-,__________\nv-,__________\nwlimas,Lima Beans\nwokra,Okra\n\n")
+jsLoad("File ", "shopWhole", "v=Vitamins \nw=Whole Foods\n;\nvmelatonin3mg,Melatonin\nvlifeMultiNoIron,Life Force\nvesterC500mg,Ester-C\nvpantothenic500mg,Pantothenic Acid\nvpotassium99mg,Potassium\nvheartCare,Heart Care Hawthorn\nv-,__________\nv-,__________\nv-,__________\nv-,__________\nwlimas,Lima Beans\nwokra,Okra\nwflaxSeed,Flax Seed Oil\n\n")
