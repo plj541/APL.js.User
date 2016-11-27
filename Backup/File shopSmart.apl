@@ -14,46 +14,47 @@ B=Tuna-Pickles
 C=Liquor
 ;
 2eggs,Eggs
-0robCheese,Rob Cheese
-3juiceOrange,Orange Juice
-3milkLow,Low Fat Milk
 0greenOnion,Green Onions
 0carrotShred,Shreded Carrots
 0carrots,Carrots
-8popcorn,Pop Corn
+0cheeseSticks,Cheese Sticks
+1biscotti,Biscotti
 9peanuts,Peanuts
 8nutSacks,Nut Sacks
 Btuna,Tuna
-0cheetos,Cheetos
 1ausByte,Aussie Bytes
-Arice,Rice
 6cornMeal,Corn Meal
+Arice,Rice
 AoilOlive,Olive Oil
 AoilSafflower,Safflower Oil
-Bpickles,Pickle Stackers
-Bmayo,Mayonnaise
-Bmustard,Mustard
+0klonRose,Klondike Rose
+0cheetos,Cheetos
 7cornStarch,Corn Starch
 CjackDanl,Jack Daniels
-9cerealB,Cereal Barbara
-9cerealR,Cereal Rob
 4bounce,Bounce
-3juiceOrnPinBan,Orange Pinapple Banana
-3juiceLimeade,Limeade
+3juicePineOrange,Pineapple Orange
+3juiceLemonade,Lemonade
+3juiceOrange,Orange Juice
+3milkLow,Low Fat Milk
 3milkAlmond,Almond Milk
 3butter,Butter
+0parmesan,Parmesan
+0robCheese,Rob Cheese
 1breadWhite,White Bread
 1breadSour,Sourdough Bread
-0parmesan,Parmesan
 3pizza,Pizza
 2frozBlue,Blueberries
 2frozPeaches,Peaches
 2frozStraw,Strawberries
 2frozMedley,Berry Medley
+2frozTriBerry,Triple Berry
 2sausages,Sausages
 2ravioli,Ravioli
 2shrimp,Jumbo Shrimp
-BcanBeans,Canned Beans
+BpickleStack,Pickle Stackers
+Bmayo,Mayonnaise
+Bmustard,Mustard
+Bketchup,Ketchup
 1waterDist,Distilled Water
 !waterDrink,Drink Water
 5tp,Toilet Paper

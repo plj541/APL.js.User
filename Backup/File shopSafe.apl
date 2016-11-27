@@ -1,5 +1,9 @@
-!=Fruit-Nuts
-0=Produce 
+!=Fruit
+#-Nuts
+$-Salads
+&-Fresh Produce
+/-Bananas
+0=Dry Produce 
 1=Fish-Meat
 2=Can Goods
 3=Soup-Condi
@@ -13,16 +17,9 @@ a=Deli
 b=Dairy
 c=Frozen
 ;
-apicThree,Pick Three
-asalad,Deli Salad
-aturkey,Turkey
-abreadRoll,Bread Rolls
-ascalPot,Scallop Potatoes
 bmildGuacCups,Guac Cups
-7carrotApple,Carrot Apple
-7brocApple,Broccoli Apple
-0mushroom,Mushrooms
-0spinach,Spinach
+&mushroom,Mushrooms
+$spinach,Spinach
 !apple,Fuji Apples
 !berryRasp,Raspberry
 !berryBlue,Blueberries
@@ -30,12 +27,12 @@ bmildGuacCups,Guac Cups
 !cherry,Cherries
 !apricot,Apricots
 0lemons,Lemons
-0oranges,Oranges
-0tomatoes,Tomatoes
-0greenPepper,Green Peppers
-0celery,Celery
+&oranges,Oranges
+&tomatoes,Tomatoes
+&greenPepper,Green Peppers
+&celery,Celery
 abrie,Brie
-bcheeseBeef,Cheese Beef Sticks
+bcheeseSticks,Cheese Sticks
 0juiceLemon,Lemon Juice
 0juiceLime,Lime Juice
 1hamburg,Hamburger
@@ -45,14 +42,17 @@ bcheeseBeef,Cheese Beef Sticks
 1chicBreast,Chicken Breast
 1chicThigh,Chicken Thigh
 1turkThigh,Turkey Thigh
-9belVita,BelVita
+4prunes,Prunes
 4oatBar,Oats and Honey
+4almondCrunch,Almond Crunch
 5oldFashPB,Old Fashion PB
-!nutPecan,Pecans
-!nutCashew,Cashews
+#pecan,Pecans
+#cashew,Cashews
+#walnut,Walnuts
 5preserve,Preserves
-0banana,Bananas
-0avacado,Avacado
+3annieMacChe,Annie's Mac & Cheese
+/banana,Bananas
+&avacado,Avacado
 4oatmeal,Oatmeal
 0russet,Russets
 0yam,Yams
@@ -62,7 +62,11 @@ bcheeseBeef,Cheese Beef Sticks
 aengMuff,English Muffens
 2tortilla,Tortillas
 0garlic,Garlic
+4bakePowder,Rumford Baking Powder
 8vitCalcium,Calcium
+8vitCoQ10(200mg),CoQ-10
+8vitD,Vitamin D
+8vitE,Vitamin E
 8vitZinc,Zinc
 6darkWool,Dark Woolite
 8nasalStrip,Nasal Strips
@@ -70,15 +74,19 @@ aengMuff,English Muffens
 8dentalPick,Dental Picks
 8toothPaste,Sensodyne
 8kyJelly,KY Jelly
+ccornBirdI,Birds Eye Corn
 ccherFroz,Frozen Cherries
-cfrozLima,Baby Limas
-cfrozOkra,Okra
 cpizza,Pizza
-6mitten,Mitten Food
-6catOdor,Cat Deodor
+3katchup,Katchup
 2tomDice,Diced Tomatoes
 2tomPaste,Tomato Paste
-2kidneyBean,Kidney Beans
+2beanKidney,Kidney Beans
+2beanGreen,Green Beans
+2beanGarbanzo,Garbanzos
 3cranSauce,Cranberry Sauce
+6catFood,Cat Food
+6catDeodor,Cat Deodor
 8pads,StayFree Maxi
 6dishSoap,Dish Soap
+6lysolDualAct,Lysol Wipes
+6swifferDry,Swiffer Dry
