@@ -17,7 +17,6 @@ C=Liquor
 0greenOnion,Green Onions
 0carrotShred,Shreded Carrots
 0carrots,Carrots
-0cheeseSticks,Cheese Sticks
 1biscotti,Biscotti
 9peanuts,Peanuts
 8nutSacks,Nut Sacks
@@ -42,6 +41,7 @@ CjackDanl,Jack Daniels
 0robCheese,Rob Cheese
 1breadWhite,White Bread
 1breadSour,Sourdough Bread
+0cheeseSticks,Cheese Sticks
 3pizza,Pizza
 2frozBlue,Blueberries
 2frozPeaches,Peaches

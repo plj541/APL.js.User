@@ -138,10 +138,11 @@
 
 ⎕split← {
  ⍝ Split ⍺ into enclosed vectors at each ⍵
- 0= ⍴⍺← ,⍺ : '' ⋄ 0= ⍴⍵← ,⍵ : ,¨⍺
- width← ⍴⍵← ,⍵ ⋄ ⍵← ⍵⍷ ⍺
- ⍵← (⍵/ ⍳⍴⍵), ⍴⍵ ⋄ drop← 0
- ,⍵ {∆← drop↓ ⍺↑ ⍵ ⋄ drop← ⍺+ width ⋄ ∆}¨ ⊂⍺
+ ⍺← ,⍺ ⋄ ⍵← ,⍵
+ ~'\'∊ ⍵ : ,¨ «_a.toSimpleString().split(_w.toSimpleString())»
+ bs← {⍺← ⍺⌽ ⎕UCS 92 20 ⋄ ⍵← ,⍵ ⋄ ⍵[(⍵= ⍺[0])/⍳⍴⍵]← ⍺[1]}
+ ⍵← 0 bs ⍵ ⋄ ⍺← 0 bs ⍺     
+ 1 bs¨ «_a.toSimpleString().split(_w.toSimpleString())»
 }
 ⎕join← {
  ⍝ Join ⍺ enclosed vectors, with ⍵ between each

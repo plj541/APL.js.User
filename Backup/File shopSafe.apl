@@ -5,11 +5,11 @@ $-Salads
 /-Bananas
 0=Dry Produce 
 1=Fish-Meat
-2=Can Goods
-3=Soup-Condi
-4=Cereal
-5=Jam-Tea
-6=Tide-Pet
+2=Beans-Tomatos
+3=Fruit-Baking
+4=Crunch-Cereal
+5=Tea-Jam
+6=Soap-Pet
 7=Cards-Baby
 8=Drugs
 9=Snacks
@@ -17,7 +17,8 @@ a=Deli
 b=Dairy
 c=Frozen
 ;
-bmildGuacCups,Guac Cups
+bguacCupsMild,Guac Cups
+bsalsaRojaMild,Salsa Roja
 &mushroom,Mushrooms
 $spinach,Spinach
 !apple,Fuji Apples
@@ -32,8 +33,6 @@ $spinach,Spinach
 &greenPepper,Green Peppers
 &celery,Celery
 abrie,Brie
-bcheeseSticks,Cheese Sticks
-0juiceLemon,Lemon Juice
 0juiceLime,Lime Juice
 1hamburg,Hamburger
 1steak,Steak
@@ -54,7 +53,6 @@ bcheeseSticks,Cheese Sticks
 /banana,Bananas
 &avacado,Avacado
 4oatmeal,Oatmeal
-0russet,Russets
 0yam,Yams
 0onion,Onion
 9riceCracker,Rice Crackers
@@ -73,11 +71,10 @@ aengMuff,English Muffens
 8earSwab,Cotton Swabs
 8dentalPick,Dental Picks
 8toothPaste,Sensodyne
+8dulceEase,Dulce Ease
 8kyJelly,KY Jelly
 ccornBirdI,Birds Eye Corn
 ccherFroz,Frozen Cherries
-cpizza,Pizza
-3katchup,Katchup
 2tomDice,Diced Tomatoes
 2tomPaste,Tomato Paste
 2beanKidney,Kidney Beans
