@@ -1,17 +1,25 @@
   var thisPLJ, thisURL, thisBFJ, thisArgs
   var thisPJ, thisLink, thisBJ
+  var thisKRJ,          thisRAJ
+  var thisKJ,           thisRJ
 
-  function handleLoad(aLink, aPJ, aBJ) {
+  function handleLoad(aLink, aPJ, aBJ, aKJ, aRJ) {
    thisPJ= aPJ
    thisLink= aLink
    thisBJ= aBJ
+   thisKJ= aKJ
+   thisRJ= aRJ
    
    flagEmpty(thisPJ, "")
    flagEmpty(thisBJ, "")
-
-   thisPLJ= thisBFJ= " is set when you choose a destination!"
+   flagEmpty(thisKJ, "")
+   flagEmpty(thisRJ, "")
+   
+   thisPLJ= thisBFJ= thisKRJ= thisRAJ= " is set when you choose a destination!"
    thisPLJ= "PLJ" + thisPLJ
    thisBFJ= "BFJ" + thisBFJ
+   thisKRJ= "KRJ" + thisKRJ
+   thisRAJ= "RAJ" + thisRAJ
    thisURL= "home.html"
 
    thisArgs= window.location.href
@@ -23,15 +31,19 @@
    }
   }
 
-  function handleChoice(aLink, aURL, aPLJ, aBFJ) {
+  function handleChoice(aLink, aURL, aPLJ, aBFJ, aKRJ, aRAJ) {
    thisLink.value= aLink
    thisURL= aURL
    thisPLJ= aPLJ
    thisBFJ= aBFJ
+   thisKRJ= aKRJ
+   thisRAJ= aRAJ
 
    flagEmpty(thisPJ, aPLJ)
    flagEmpty(thisBJ, aBFJ)
-
+   flagEmpty(thisKJ, aKRJ)
+   flagEmpty(thisRJ, aRAJ)
+   
    if (thisArgs != "Immed=No") {
     handleLink()
    }
