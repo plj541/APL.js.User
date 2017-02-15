@@ -45,7 +45,7 @@
    flagEmpty(thisRJ, aRAJ)
    
    if (thisArgs != "Immed=No") {
-    handleLink()
+    handleLink(true)
    }
   }
 
@@ -62,6 +62,10 @@
    prompt("User Name", aValue)
   }
  
-  function handleLink() {
-   window.open(thisURL)
+  function handleLink(aTbd) {
+   if (aTbd) {
+    window.open(thisURL)
+   } else {
+    window.open("home.html")
+   }
   }
