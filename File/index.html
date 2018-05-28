@@ -1,7 +1,79 @@
 <html>
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
  <title>Accounts</title>
- <script type="text/javascript" src="index.js"></script>
+ <script type="text/javascript">
+  var thisPLJ, thisURL, thisBFJ, thisArgs
+  var thisPJ, thisLink, thisBJ
+  var thisKRJ,          thisRAJ
+  var thisKJ,           thisRJ
+
+  function handleLoad(aLink, aPJ, aBJ, aKJ, aRJ) {
+   thisPJ= aPJ
+   thisLink= aLink
+   thisBJ= aBJ
+   thisKJ= aKJ
+   thisRJ= aRJ
+   
+   flagEmpty(thisPJ, "")
+   flagEmpty(thisBJ, "")
+   flagEmpty(thisKJ, "")
+   flagEmpty(thisRJ, "")
+   
+   thisPLJ= thisBFJ= thisKRJ= thisRAJ= " is set when you choose a destination!"
+   thisPLJ= "PLJ" + thisPLJ
+   thisBFJ= "BFJ" + thisBFJ
+   thisKRJ= "KRJ" + thisKRJ
+   thisRAJ= "RAJ" + thisRAJ
+   thisURL= "home.html"
+
+   thisArgs= window.location.href
+   thisArgs= thisArgs.split("?")
+   if (thisArgs.length == 2) {
+    thisArgs= thisArgs[1]
+   } else {
+    thisArgs= ""
+   }
+  }
+
+  function handleChoice(aLink, aURL, aPLJ, aBFJ, aKRJ, aRAJ) {
+   thisLink.value= aLink
+   thisURL= aURL
+   thisPLJ= aPLJ
+   thisBFJ= aBFJ
+   thisKRJ= aKRJ
+   thisRAJ= aRAJ
+
+   flagEmpty(thisPJ, aPLJ)
+   flagEmpty(thisBJ, aBFJ)
+   flagEmpty(thisKJ, aKRJ)
+   flagEmpty(thisRJ, aRAJ)
+   
+   if (thisArgs != "Immed=No") {
+    handleLink(true)
+   }
+  }
+
+  function flagEmpty(aField, aName) {
+   if (aName.length == 0) {
+    aField.style.backgroundColor = "LightPink"
+   } else {
+    aField.style.backgroundColor = "LightGreen"
+   }
+  }
+
+  function handleFocus(aValue) {
+   thisLink.focus()
+   prompt("User Name", aValue)
+  }
+ 
+  function handleLink(aTbd) {
+   if (aTbd) {
+    window.open(thisURL)
+   } else {
+    window.open('https://plj541.github.io/APL.js.User/File/home.html')
+   }
+  }
+ </script>
 </head>
 
 <body onload="handleLoad(formLinks.buttonLink,
@@ -18,7 +90,7 @@
     value="AARP"
     onclick="handleChoice('AARP', 
     'http://www.aarp.org/',
-    'plj541@gmail.comc', 'bfj636@gmail.com', '', '')">
+    'plj541@gmail.com', 'bfj636@gmail.com', '', '')">
   </center></td>
   <td width="200"><center>
    <input type="button"
@@ -77,7 +149,7 @@
    <input type="button"
     value="KQED"
     onclick="handleChoice('KQED', 
-    'http://www.kqed.com/',
+    'http://www.kqed.org/',
     'plj541@gmail.com', '', '', '')">
   </center></td>
   <td width="200"><center>
